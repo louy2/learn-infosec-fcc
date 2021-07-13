@@ -1,3 +1,4 @@
+const bcrypt = require('bcrypt');
 const express = require('express');
 const app = express();
 const helmet = require('helmet');
@@ -15,7 +16,6 @@ app.use(helmet.contentSecurityPolicy({
     scriptSrc: ["'self'", "trusted-cdn.com"],
   },
 }));
-const bcrypt = require('bcrypt');
 
 
 
